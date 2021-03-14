@@ -44,9 +44,13 @@ body {
     font-size: 2.7rem;
     font-style: italic;
     color: black;
-    text-shadow: 1px 1px #f2d38c;
+      
 }
 
+#quote:hover {
+     color: #f2d38c;
+     text-decoration: none;
+}
 
 
 #movie {
@@ -58,11 +62,10 @@ body {
 }
 
 .card {
-    
-    margin: 0 auto;
+     margin: 0 auto;
     margin-top: 50px;
-    background-color: #d51e13;
-    width: 32rem;
+    background-color: 	rgba(213, 30, 19, 0.6);
+    width: 40rem;
     height: 10rem;
     box-shadow: 2px 3px 2px black;
     border-radius: 5%;
@@ -155,6 +158,8 @@ body {
   display: block;
   text-align: center;
   font-family: Oswald,sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 /* Change color of dropdown links on hover */
