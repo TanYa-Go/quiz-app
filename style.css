@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Oswald:wght@200;300;400&display=swap');
-:root {
-    --hue-neutral:  200;
-    --hue-wrong:  0;
-    --hue-correct:  145;
-}
+
 * {
      margin: 0;
     padding: 0;
@@ -17,11 +13,12 @@ body, html {
 body {
     background-image: url(./assets/images/2.jpg);
     height: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
 }
 
+/* ================================= Home Page ======================================================================================*/
 #title {
     font-family: Oswald, sans-serif;
     font-weight: 600;
@@ -34,7 +31,6 @@ body {
 }
 
 
-
 #quote {
     margin-top: 10px;
     display: flex;
@@ -44,6 +40,7 @@ body {
     font-size: 2.7rem;
     font-style: italic;
     color: black;
+    border-style: none;
       
 }
 
@@ -64,11 +61,11 @@ body {
 .card {
      margin: 0 auto;
     margin-top: 50px;
-    background-color: 	rgba(213, 30, 19, 0.6);
+    background-color: 	rgba(213, 30, 19, 0.5);
     width: 40rem;
     height: 10rem;
     box-shadow: 2px 3px 2px black;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 .card-text{
@@ -167,3 +164,83 @@ body {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+/* ================================= End Home Page ======================================================================================*/
+
+/* ================================= Quiz Page ======================================================================================*/
+
+.game-container {
+    background-color: rgba(213, 30, 19, 0.5) ;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 3px 2px black;
+    height: 25rem;
+}
+
+#time-container, #question-cont, #score-container{
+    font-family: Oswald,sans-serif;
+    font-size: 2rem;
+    color: black;
+    font-weight: 800;
+}
+#question-cont {
+    text-align: center;
+}
+#score-container {
+    text-align: right;
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.btn-answer {
+  height: 60px;
+  border: 1px solid #f2d38c;
+  background-color: #f2d38c;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  font-family: Oswald,sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.btn-answer:hover {
+  border: 1px solid black;
+  background-color: black;
+  color: #f2d38c;
+}
+
+#question {
+    color: #f2d38c;
+    font-family: Bungee Inline,sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    text-shadow: 2px 2px black;
+   
+}
+
+.restart-btn {
+    background-color: black ;
+    color: #f2d38c;
+    font-family: Bungee Inline, sans-serif;
+    height: 70px;
+    width: 170px;
+    font-size: larger;
+    margin:auto;
+    margin-bottom: 30px;
+}
+
+#restart-btn:hover{
+    background-color: #d51e13;
+}
+
+/*body{
+overflow-y: hidden;
+}*/

@@ -13,7 +13,7 @@
 </head>
   <body>
 
-    <section class="container title-container ">
+    <section class="container title-container">
         <div class="row">
             <div class="col-12">
                 <h1 id="title">Movie Quiz</h1>
@@ -37,7 +37,7 @@
     </section>
    
 
-<div class="container welcome-screen">
+<div class="container welcome-screen ">
     <div class="row">
         <div class="col-4">
             <button id="play-btn" class="play-btn btn">How to Play</button>
@@ -61,50 +61,61 @@
     </div>
 
 
+    <!----===================================Home page end ======================================================-->
 
-
-
-    <section class="container game-container hide">
+  
+ 
+    <section class="container game-container ">
         <div class="row">
             
                 <!-----this is from Anouk-->
                 <div class="col-4" id="time-container">
-                        <p id="time-text">Time: <span id="time"></span></p>        
+                        <p id="time-text">Time: 20sec<span id="time"></span></p>        
                     </div>
                     <div class="col-4" id="question-cont">
-                        <p id="question-text">Question: <span id="question"></span></p>        
+                        <p id="question-text">Question: 1/10<span id="question-count"></span></p>        
                     </div>
                     <div class="col-4" id="score-container">
-                        <p id="score-text">Score: <span id="score"></span></p>        
+                        <p id="score-text">Score: 0<span id="score"></span></p>        
                     </div>
+        </div>
                     <!--  Question Counter + Displayed Question -->
+        <div class="row">
                     <div class="col-12">
                         <div id="questionCounterContainer">
                             <div id="questionCounter">
                                 <span id="questionCounterText"></span>
                             </div>
                         </div>
-                <!-----this is from Anouk-->
-               <div id="question-container">
-                <!--class="hide"-->
-                <div class="col-12">
-                    <div id="question">Which actor played the lead role in the movie Legend?</div>
-                    <div id="answer-buttons" class="btn-grid">
-                        <button class="btn">George Clooney</button>
-                        <button class="btn">Brad Pitt</button>
-                        <button class="btn">Tom Hardy</button>
-                        <button class="btn">Jason Momoa</button>
                     </div>
-                </div>
-    
-                <div class="controls">
-                    <button id="start-btn-1" class="start-btn btn">How to Play</button>
-                    <button id="next-btn-1" class="next-btn btn ">Start Quiz</button>
-                </div>
-            </div>
-            </div>
         </div>
-    </section>
+                <!-----this is from Anouk-->
+               <div id="container question-container">
+                   <div class="row">
+                <!--class="hide"-->
+                         <div class="col-12">
+                            <div id="question">Who played the lead role in the movie Legend?</div>
+                            <div id="answer-buttons" class="btn-grid">
+                                <button class="btn-answer">George Clooney</button>
+                                <button class="btn-answer">Brad Pitt</button>
+                                <button class="btn-answer">Tom Hardy</button>
+                                <button class="btn-answer">Jason Momoa</button>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+               </section>  
+              
+            <div class="form-row text-center ">
+                    <div class="col-12">
+                    <button id="restart-btn" class="restart-btn btn ">Start Over</button>
+                </div>
+            </div>
+                
+                
+            
+        
+    
 
    
 
